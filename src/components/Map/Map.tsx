@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Map.module.css';
+import style from './Map.module.scss';
 
 declare var ymaps: any;
 
@@ -24,8 +24,8 @@ export const Map = () => {
     }
 
     return (
-        <>
+        <div className={style.mapContainer}>
             <div id="map" className={style.map}/>
-        </>
+        </div>
     );
 };

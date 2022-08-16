@@ -1,0 +1,10 @@
+@import "./common/styles/sass/variables";
+
+.app {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+background-color: $bgColor;
+}
