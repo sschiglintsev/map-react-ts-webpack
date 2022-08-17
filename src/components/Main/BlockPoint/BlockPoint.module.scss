@@ -1,13 +1,18 @@
 @import "../../../common/styles/sass/variables";
 
 .block {
-  width: 482px;
+  width: 485px;
   height: 74px;
   background-color: $bgBlockColor;
   color: $textColor;
   font-size: 17px;
-  padding-left: 10px;
   margin-top: 15px;
+  cursor: pointer;
+  @media screen and (max-width: 510px) {
+    flex-direction: column;
+    width: 90%;
+  }
+
 
   .buttonContainer {
     display: flex;
@@ -25,6 +30,9 @@
       color: $textColor;
     }
   }
+}
 
-
+.block:hover {
+  transition: 1s ease-in-out;
+  background: #5c5c5c;
 }
